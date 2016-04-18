@@ -8,27 +8,27 @@
 # + ab
 # - b
 # - ba
-REGEXP_1 = ''
+REGEXP_1 = '^a{1}b?$'
 
 # + aab
 # + abb
 # + acb
 # - ab
 # - aabc
-REGEXP_2 = ''
+REGEXP_2 = '^a{1}[abc]{1}b{1}$'
 
 # + sofia.mp3
 # + sofia.mp4
 # - sofia.mp7
 # - sofia.mp34
-REGEXP_3 = ''
+REGEXP_3 = '^s{1}o{1}f{1}i{1}a{1}.{1}m{1}p{1}[34]{1}$'
 
 # + taverna
 # + versus
 # + vera
 # + zveri
 # - zver
-REGEXP_4 = ''
+REGEXP_4 = '^.*[^r]$'
 
 # - a
 # - aa
@@ -39,7 +39,7 @@ REGEXP_4 = ''
 # + bbb
 # - bbbb
 # - ccc
-REGEXP_5 = ''
+REGEXP_5 = '^[ab]{1}[ab]{1}[ab]{1}$'
 
 # - Ok
 # - OkOk
@@ -49,7 +49,7 @@ REGEXP_5 = ''
 # - abab
 # + ababab
 # - abababab
-REGEXP_6 = ''
+REGEXP_6 = '^[Oabk]{6}$'   
 
 # - aaa
 # - aaa aaa
@@ -58,7 +58,7 @@ REGEXP_6 = ''
 # + Aaa aaa aaa
 # - A
 # - aaa A aaa
-REGEXP_7 = ''
+REGEXP_7 = '^[aA ]{11}$'
 
 # + abc
 # + abc03
@@ -67,4 +67,5 @@ REGEXP_7 = ''
 # - Aabc
 # - abc1
 # - #abc
-REGEXP_8 = ''
+
+REGEXP_8 = '^a.*[^1]$'
